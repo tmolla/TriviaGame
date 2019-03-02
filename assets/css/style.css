@@ -1,0 +1,12 @@
+.container{
+    text-align:center;
+    margin-top:20px;
+}
+
+.jumbotron {
+    background-color: sandybrown;
+}
+
+.card {
+    background-color: turquoise;
+}

@@ -9,39 +9,60 @@
         integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">    
     <title>Trivia</title>
+    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
 </head>
 
 <body>
-    <div class="intro col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
+    <div class="container col-lg-6 col-md-6 col-sm-6 col-xs-6 offset-3 float-md-center">
         <div class="jumbotron">
             <h1 class="display-4">Arizona Trivias </h1>
             <hr class="my-4">
             <!-- <p class="lead">You have 60 seconds to snswer 10 questions.</p>
             <P class="lead">Click below to get going!!!</P> -->
-            <P class="lead">Time Remaining: 28 Seconds</P>
+            <P class="timerDisplay">Fun trivia questions about Arizona!</P>
             <!-- <p>It uses utility classes for typography and spacing to space content out within the larger container.</p> -->
             <a class="btn btn-primary btn-lg" href="#" role="button">Start Game</a>
-            <div class="card border-dark mb-3" style="width: 100%;">
-                    <div class="card-header">When did Arizona Became one of the United States?</div>
-                    <div class="card-body text-dark">
+            <div class="question card border-dark mb-3" style="width: 100%; text-align: left;">
+                <div class="card-header"></div>
+                <div class="card-body text-dark">
+                    <div class=radio-button-container>
                         <div class="custom-control custom-radio">
                             <input type="radio" id="customRadioInline1" name="customRadioInline1" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline1">March 18 1841</label>
+                            <label class="custom-control-label" for="customRadioInline1"></label>
                         </div>
                         <div class="custom-control custom-radio ">
                             <input type="radio" id="customRadioInline2" name="customRadioInline1" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline2">February 14 1912</label>
+                            <label class="custom-control-label" for="customRadioInline2"></label>
                         </div>
                         <div class="custom-control custom-radio ">
                             <input type="radio" id="customRadioInline3" name="customRadioInline1" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline3">January 17 1900</label>
+                            <label class="custom-control-label" for="customRadioInline3"></label>
                         </div>
                         <div class="custom-control custom-radio">
                             <input type="radio" id="customRadioInline4" name="customRadioInline1" class="custom-control-input">
-                            <label class="custom-control-label" for="customRadioInline4">June 9 1931</label>
-                        </div>               
+                            <label class="custom-control-label" for="customRadioInline4"></label>
+                        </div>   
+                    </div>      
+                </div>
+            </div>
+
+
+            <div class="answer card border-dark mb-3" style="width: 100%;">
+                <div class="row no-gutters">
+                    <div class="col-md-4">
+                    <img src="assets/images/UofA.png" class="card-img" alt="...">
+                    </div>
+                    <div class="col-md-8">
+                    <div class="card-body" style="text-align:center;">
+                        <h5 class="status card-title">Incorrect answer!!</h5>
+                        <p class="detail-answer card-text">The correct answer was: Feb 14 1912</p>
+                        <!-- <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p> -->
+                    </div>
                     </div>
                 </div>
+            </div>           
+
+
         </div>
     </div>
 
