@@ -1,12 +1,22 @@
+body{
+    background-image: url("../images/Arizona.jpg");
+    background-repeat:no-repeat;
+    background-size:cover;
+}
 .container{
     text-align:center;
     margin-top:20px;
 }
 
 .jumbotron {
-    background-color: sandybrown;
+    background: none;
 }
 
 .card {
     background-color: turquoise;
+}
+
+.timerDisplay
+{
+    color: white;
 }
